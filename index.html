@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1.0"/>
+	<meta http-equiv="X-UA-compatible" content="ie=edge"/>
+	<script src="https://kit.fontawesome.com/3da1a747b2.js" crossorigin="anonymous"></script><!--include font awesome for clipbord icon-->
+	<link rel="stylesheet" type="text/css" href="style.css"><!-- include style sheet -->
+	
+</head>
+<body>
+<div class="container"><!--wraps everthing box-->
+	<h2>Password Generator</h2>
+	<div class="result-container"><!--genrated password display box -->
+		<span id="result"></span><!--with help of js-->
+		<button class="btn" id="clipboard"><!--button with id clipbord -->
+			<i class="far fa-clipboard"></i><!--font awesome -->
+		</button>
+	</div>
+	<div class="settings">
+		<div class="setting">
+			<label>Password length</label>
+			<input type="number" id="length" min='4' max='20' value='20' /><!-- no. input with id length -->
+		</div>
+		<div class="setting">
+			<label>Include uppercase letters</label> 
+			<input type="checkbox" id="uppercase" checked /><!-- checkbox with req. to include in password -->
+		</div>
+		<div class="setting">
+			<label>Include lowercase letters</label> 
+			<input type="checkbox" id="lowercase" checked />
+		</div>
+		<div class="setting">
+			<label>Include numbers</label> 
+			<input type="checkbox" id="numbers" checked />
+		</div>
+		<div class="setting">
+			<label>Include symbols</label> 
+			<input type="checkbox" id="symbols" checked />
+		</div>
+	</div>
+	<button class="btn btn-large" id="generate"><!-- button with id generate -->
+		Generate password
+	</button>
+</div>
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
